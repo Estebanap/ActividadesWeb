@@ -4,19 +4,19 @@ body {
 
 
 h1 {
-	color: #ffffff;
+	color: #000000;
 }
 
 header{
 
 	text-align: center;
-	background-color: black;
+
 	flex: 0 1 auto;
+	float: initial;
 }
 
 nav {
-	background: black;
-	
+	background: rgb(87, 28, 184);
 
 }
 
@@ -24,9 +24,8 @@ nav ul{
 
 	display: flex;
 	justify-content: space-around;
-	flex: 0 1 auto;
 	/* text-align: center; Text align elige la distribución de los contenedores*/ 
-	  
+	box-sizing:border-box;
 	border:2px solid violet;
 	
 	
@@ -35,38 +34,36 @@ nav ul{
 
 nav ul li {
 
+	
 	display: inline; /* El elemnto no genera saltos de linea*/ 
-	padding: inherit;
-	border:2px solid red;
-	
-	
 
 }
 
 nav ul li a {
-	text-decoration: none;
+
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	color: #ffffff;
 	padding:0.8vw;
+	float: left;
 	
 }
 
-nav ul li a:hover { /*Cuando se pasa el mouse por el elemnto*/ 
-	color:#118bfe;
+nav ul li a:hover { /*Cuando se pasa el mouse por el elemento*/ 
+	color:#000203;
 	margin-top: -0.25vw;
 	padding-bottom: 0.7vw;
-	background: linear-gradient(108deg,#042541,#cfe418);
+	background: linear-gradient(108deg,#042541,#59aa7b);
 }
 
 article li{
 
-	color:#4d8868;
+	color:#000000;
 }
 
 article li strong{
 
-	text-decoration:overline;
-	color:#279aff;
+	
+	color:#000000;
 
 }
 
@@ -75,7 +72,10 @@ aside {
 	width:30%;
 	float:left;
 	clear:both;
-	background:#ffe96c;
+	background:#ffffff;
+	border:2px solid black;
+	box-sizing:border-box;
+	
 
 }
 
@@ -83,28 +83,32 @@ aside {
 
 	width:50%;
 	float:left;
-	border:2px solid black;
-	box-sizing:border-box;
+
 }
 
 #experiencia {
 
 	width:50%;
-	border:2px dotted rgb(255, 0, 76);
+	
 	border-width: 0.25vw;
-	box-sizing:border-box;
+
 	float:left;
+
 }
 
 section {
 
 	float:right;
 	width:70%;
-	background:#8eff6b;
+	background:#ffffff;
+	border:2px solid black;
+	box-sizing:border-box;
 }
 
 footer{
-background:#cfe418;
+	background: rgb(87, 28, 184);
+	box-sizing:border-box;
+	border:2px solid violet;
 float:center;
 }
 
